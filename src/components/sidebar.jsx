@@ -8,9 +8,11 @@ export default class Sidebar extends Component {
           <nav href="#navbar" className="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i /></nav>
           <aside id="colorlib-aside" className="border js-fullheight">
             <div className="text-center">
-              <div className="author-img" style={{background: 'url("https://www.publicdomainpictures.net/pictures/190000/velka/black-background-1468370534d5s.jpg")'}}/>
+              <div className="author-img" style={{backgroundImage: 'url(images/about.jpg)'}} />
               <h1 id="colorlib-logo"><a href="index.html">Manusha Pamoda</a></h1>
-              <span className="email"><i className="icon-mail"></i> manushapamoda13@gmail.com</span>
+              <span className="email"><i className="icon-mail"></i> <a href={"mailto:" + this.props.email}>manushapamoda13@gmail.com</a></span>
+              <p>                                                                                                               
+                                                          </p>
             </div>
             <nav id="colorlib-main-menu" role="navigation" className="navbar">
               <div id="navbar" className="collapse">
@@ -25,13 +27,14 @@ export default class Sidebar extends Component {
             </nav>
             <nav id="colorlib-main-menu">
               <ul>
-                
-                
+              <li><a href="https://www.facebook.com/manusha.pamoda/" target="_blank" rel="noopener noreferrer"><i className="icon-facebook2" /></a></li>
                 <li><a href="https://www.linkedin.com/in/manusha-pamoda/" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin2" /></a></li>
                 <li><a href="https://github.com/Manusha007" target="_blank" rel="noopener noreferrer"><i className="icon-github"></i></a></li>
-                
               </ul>
             </nav>
+            <div className="colorlib-footer">
+              
+            </div>
           </aside>
         </div>
       </div>
